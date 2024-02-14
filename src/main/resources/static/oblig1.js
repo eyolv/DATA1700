@@ -1,30 +1,43 @@
-//const filmer = ["Apokalypse", "Chainsaw", "Massacre", "American History X"]
-
 // JavaScript code
 function storeInput() {
     // Tomt array
-    const inputArray = [];
-
+    let inputArray = [];
+console.log("AAA");
     // Få input
-    const input1 = document.getElementById("filmer");
-    const input2 = document.getElementById("antall");
-    const input3 = document.getElementById("fornavn");
-    const input4 = document.getElementById("etternavn");
-    const input5 = document.getElementById("telefonnummer");
-    const input6 = document.getElementById("epost");
+    let filmer = document.getElementById("filmer").value;
+    let antall = document.getElementById("antall").value;
+    let fornavn = document.getElementById("fornavn").value;
+    let etternavn = document.getElementById("etternavn").value;
+    let telefonnummer = document.getElementById("telefonnummer").value;
+    let epost = document.getElementById("epost").value;
 
-    // Get the values of the input elements
-    const value1 = input1.value;
-    const value2 = input2.value;
-    const value3 = input3.value;
-    const value4 = input4.value;
-    const value5 = input5.value;
-    const value6 = input6.value;
+    let order = {
+        Filmer: filmer,
+        Antall: antall,
+        Fornavn: fornavn,
+        Etternavn: etternavn,
+        Telefonnummer: telefonnummer,
+        Epost: epost
+    }
+
 
     // Add the values to the array
-    inputArray.push(value1, value2, value3, value4, value5, value6);
+    inputArray.push(order);
+    let orderOut = "<table><tr>" +
+        "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnummer</th><th>Epost</th>" + "</tr>";
+console.log("Half Works")
 
-    function printnumbers(){
+    for (let i = 0; i < tickets.length; i++){
+        orderOut +=
+            "<tr> <th>" + tickets[i].Filmer + "</th></tr>" + tickets[i].Antall +
+            "<tr> <th>" + tickets[i].Fornavn + "</th></tr>" + tickets[i].Etternavn +
+            "<tr> <th>" + tickets[i].Telefonnummer + "</th></tr>" + tickets[i].Epost;
+        console.log("Run loop" + i);
+        document.getElementById("table").innerHTML = orderOut;
+
+
+    }
+     function printnumbers(){
         var Display = inputArray.toString();
         document.getElementById("resultat").innerHTML = Display;
     }
