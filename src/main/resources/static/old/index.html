@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig 1</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<br>
+<h2>Velg film:</h2>
+<label for="filmer">Velg en film:</label>
+
+<select name="filmoversikt" id="filmer">
+    <option id="Apokalypse" value="Apokalypse">Apokalypse</option>
+    <option id="Chainsaw" value="Chainsaw">Chainsaw</option>
+    <option id="Massacre" value="Massacre">Massacre</option>
+    <option id="American" value="AmericanHX">American History X</option>
+</select>
+
+
+<h2>Antall billetter:</h2> <input id="antall" type="number">
+<h2>Fornavn:</h2> <input type="text" id="fornavn">
+<h2>Etternavn:</h2> <input type="text" id="etternavn">
+<h2>Telefonnummer:</h2> <input type="number" id="telefonnummer">
+<h2>Epost:</h2> <input type="text" id="epost">
+<br><br>
+<button type="button" onclick="storeInput()">Kjøp billett</button>
+
+<!-- <button onclick="document.getElementById("demo").innerHTML="order" DEMO </button> -->
+
+<button type="button" onclick="printnumbers()">Display</button>
+<div id="resultat"></div>
+
+<script src="oblig1.js"></script>
+
+</body>
+
+</html>
