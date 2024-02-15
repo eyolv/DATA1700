@@ -42,5 +42,5 @@ console.log("Half Works")
         document.getElementById("resultat").innerHTML = Display;
     }
     // Print the array to the console
-    console.log(inputArray);
+    console.log(Show prog.);
 }
