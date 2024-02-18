@@ -2,8 +2,8 @@ OsloMet brukernavn: s171644
 
 GitHub brukernavn: eyolv
 
-GitHub repo URL: 
+GitHub repo URL: https://github.com/eyolv/DATA1700
 
-Fullt navn:
+Fullt navn: Eyolv André Øverland
 
-Kort beskrivelse:
+Kort beskrivelse: Oblig 1
